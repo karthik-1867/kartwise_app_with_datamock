@@ -1,0 +1,265 @@
+.HomeContainer{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+   width: 98%;
+   margin: 10px;
+   min-height: 100vh;
+   
+   gap: 10px;
+   background-color: #E6E6E6;
+}
+
+.HomeSummaryBoxes{
+    height: 100px;
+    width: 320px;
+    border-radius: 10px;
+    background-color: #8B8CC7;
+    color: white;
+    padding: 10px;
+    display: flex;
+    border: 1px solid white;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+}
+
+.HomeSummaryBoxDetails{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.HomeSummaryBoxDetailsGroup{
+    background-color: #464775;
+    height: 100%;
+    width: 95%;
+    border-radius: 10px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid white;
+    font-size: 14px;
+    font-weight: 500;
+    gap: 10px;
+}
+
+.HomeSummaryBoxDetailsGroup span{
+    background-color: #8B8CC7;
+    border-radius: 10px;
+    padding: 3px;
+    border:1px solid white;
+}
+
+.HomeSummaryAmount{
+    width: fit-content;
+    height: 70%;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: #464775;
+    display: flex;
+    border: 1px solid white;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: 14px;
+    font-weight: 500;
+
+}
+
+.HomeAmountSpent{
+   
+    background-color: rgb(230, 17, 17);
+    border-radius: 10px;
+    padding: 3px;
+    color: white;
+    text-align: center;
+    border: 0.5px solid white;
+}
+
+.HomeAmountReceived{
+    background-color: green;
+    border-radius: 10px;
+    padding: 3px;
+    color: white;
+    text-align: center; 
+    
+    border: 0.5px solid white;
+}
+
+.HomeSummaryTitle{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.HomeSummaryIcon{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #464775;
+    color: white;
+    padding: 4px;
+}
+
+.HomeSummary{
+    width: 98%;
+    border-radius: 10px;
+    background-color: #464775;
+    height: fit-content;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.HomeWrapper{
+    width: 97%;
+    margin: 10px;
+    margin-top: 0px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 30px;
+    height: 80vh;
+    border-radius: 10px;
+    background-color: #464775;
+   
+    
+}
+
+.HomeList{
+    margin: auto;
+    background-color: #464775;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.HomeListValue{
+    margin-bottom: 10px;
+}
+
+.HomeList{
+  overflow-y: scroll;
+  height: 60vh;
+
+}
+
+.HomeList li {
+     /* Adjust height as needed */
+  
+    display: flex;
+    width: fit-content;
+    align-items: top;
+    flex-direction: column;
+    overflow-x: hidden;
+    margin-bottom: 4px;
+    
+  }
+
+.HomeAllUsers{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #8B8CC7;
+    padding: 11px;
+    border-radius: 10px;
+    -webkit-box-shadow: 3px 1px 6px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 3px 1px 6px 0px rgba(0,0,0,0.75);
+    box-shadow: 3px 1px 6px 0px rgba(0,0,0,0.75);
+}
+
+.preview{
+    background-color: #8B8CC7;
+}
+
+.HomeAllUsers h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 500;
+    color: gainsboro;
+}
+
+.HomeButton{
+    padding: 10px 10px;
+    color: #8B8CC7;
+    border-radius: 10px;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+
+.HomeListPopUp{
+    padding: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+    font-weight: 500;
+    border:1px solid white;
+}
+
+.HomeAllUserDialogueContainer{
+    width: 500px;
+    padding: 10px;
+    background-color: gray;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: 500;
+    box-shadow: 3px 1px 6px 0px rgba(0, 0, 0, 0.75);
+    
+}
+
+.added{
+    background-color: #8B8CC7;
+}
+
+.HomeAllUserDialogueContainerText{
+    width: 95%;
+    background-color: #464775;
+    padding: 10px;
+    height: 65vh;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    border: 1px solid white;
+}
+
+.HomeAllUserDialogueContainerTextButton{
+    padding: 10px;
+    background-color: white;
+    color: #464775;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+
+.HomeAllUserDialogueContainerTextButton:hover{
+    padding: 10px;
+    background-color: #8B8CC7;
+    color: white;
+    font-weight: 500;
+    font-size: 16px;
+    border-radius: 10px;
+    border: none;
+}
+

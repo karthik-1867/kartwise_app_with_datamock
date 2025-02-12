@@ -1,0 +1,22 @@
+.expenseGroupExpenditureSummaryUser{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 400px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid white;
+    background-color: #6264A7;
+
+}
+
+.expenseGroupExpenditureSummaryUserDetails{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: gainsboro;
+}
+
+.expenseGroupExpenditureSummaryUserExpense{
+    color: gainsboro;
+}
