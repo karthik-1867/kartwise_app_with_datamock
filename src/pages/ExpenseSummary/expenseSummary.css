@@ -6,13 +6,13 @@
     padding: 30px;
     background-color: #464775;
     border-radius: 10px;
-    margin: 20px;
+    margin: 10px;
 }
 
 .expenseSummaryWrapper{
     display: flex;
     padding: 20px;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-around;
     min-height: 90vh;
     width: 100%;

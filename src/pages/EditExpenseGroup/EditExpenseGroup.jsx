@@ -1,0 +1,162 @@
+import React from 'react'
+import "./editExpenseGroup.css"
+import { Avatar } from '@mui/material'
+import { Delete, Edit } from '@mui/icons-material'
+
+
+export default function EditExpenseGroup() {
+  return (
+    <div className='EditExpenseGroup'>
+       <div className="EditExpenseChooseGroup">
+         <h1>Choose Expense Group</h1>
+         <ul  className='EditExpenseGroupList'>
+            <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                        karthik venkatachalam
+                    </div>
+                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li> 
+            <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                        karthik venkatachalam
+                    </div>
+                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li> 
+            <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                        karthik venkatachalam
+                    </div>
+                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li> 
+            <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                        karthik venkatachalam
+                    </div>
+                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li> 
+            <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                        karthik venkatachalam
+                    </div>
+                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li> 
+            <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                        karthik venkatachalam
+                    </div>
+                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li> 
+            <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                        karthik venkatachalam
+                    </div>
+                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li> 
+         
+         </ul>
+       </div>
+       <div className="EditExpenseChooseGroup2">
+         <h1>Expense Info</h1>
+         <Avatar className='ExpenseInfoAvatar'/>
+         <span className='EditExpenseGroupName'>Group Name : kinara</span>
+         <span className='EditExpenseGroupName'>Total members : 6</span>
+         <span className='EditExpenseGroupName'>Total expense group : 3</span>
+         <h1>Members</h1>
+         <ul  className='EditExpenseGroupList'>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+            <li className='EditExpenseItem'>
+                kart
+            </li>
+        
+         </ul>
+       </div>
+    </div>
+  )
+}

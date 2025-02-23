@@ -130,7 +130,7 @@ const saveFavUser = () =>{
          </div>
          {addFavUser?.length == 0  ?
          
-         <div className={favUser?.length == 0  || !favUser ?  'HomeAllUserDialogueContainer' : 'HomeAllUserDialogueContainer added'}>
+         <div className={favUser?.length == 0 ? 'HomeAllUserDialogueContainer' : 'HomeAllUserDialogueContainer added'}>
             <span className='HomeAllUserDialogueContainerText'>
               {favUser?.length == 0 || !favUser ? 'start adding users from Global users' : 'U have added fav user u can start creating groups. if you want to add few more you can continue the choosing users from Global users'}
               {favUser?.length > 0 &&  
