@@ -1,7 +1,7 @@
 import Menu from "./components/menu/Menu";
 import Navbar from "./components/navbar/Navbar";
 import Home from "./pages/home/Home";
-import '../src/app.css'
+import '../src/App.css'
 import { BrowserRouter,Routes,Route, Outlet } from "react-router-dom";
 import Fav from "./pages/fav/Fav";
 import CreateExpenseSheet from "./pages/createExpenseSheet/CreateExpenseSheet";
