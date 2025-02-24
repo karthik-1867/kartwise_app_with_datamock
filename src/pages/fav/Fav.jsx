@@ -5,7 +5,7 @@ import FavUser from '../../components/favUser/FavUser'
 import ExpenseDetails from '../../components/expenseDetails/ExpenseDetails'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
-import { CurrencyRupee, Group } from '@mui/icons-material'
+import { CurrencyRupee, Group, PersonAdd } from '@mui/icons-material'
 
 export default function Fav() {
 
@@ -17,38 +17,59 @@ export default function Fav() {
 
   return (
     <div className='favContainer'>
-      <div className="HomeSummary">
-        <div className="HomeSummaryBoxes">
-          <div className="HomeSummaryTitle">
-            <CurrencyRupee className='HomeSummaryIcon'/>
-            Expense summary
-          </div>
-          <div className="HomeSummaryBoxDetails">
-            <div className="HomeSummaryAmount">
+      <div className="HomeBar">
+        <div className="HomeSummary">
+          <div className="HomeSummaryBoxes">
+            <div className="HomeSummaryTitle">
+              <CurrencyRupee className='HomeSummaryIcon'/>
+              Expense summary
+            </div>
+            <div className="HomeSummaryBoxDetails">
+              <div className="HomeSummaryAmount">
                 Spent :
                 <span className='HomeAmountSpent'>50054 rs</span>
-            </div>
-            <div className="HomeSummaryAmount">
+              </div>
+              <div className="HomeSummaryAmount">
                   recived :
                   <span className='HomeAmountReceived'>50034 rs</span>            
-              </div>
+                </div>
+            </div>
+          </div>
+          <div className="HomeSummaryBoxes">
+            <div className="HomeSummaryTitle">
+              <Group className='HomeSummaryIcon'/>
+              Total groups
+            </div>
+            <div className="HomeSummaryBoxDetailsGroup">
+                <span>
+                  groups : 4
+                </span>
+                <span>
+                  Expense : 4
+                </span>
+                <span>
+                fav users : 109
+                </span>
+            </div>
           </div>
         </div>
-        <div className="HomeSummaryBoxes">
-          <div className="HomeSummaryTitle">
-            <Group className='HomeSummaryIcon'/>
-            Total groups
-          </div>
-          <div className="HomeSummaryBoxDetailsGroup">
-              <span>
-                  groups : 4
-              </span>
-              <span>
-                Expense : 4
-              </span>
-              <span>
-                fav users : 109
-              </span>
+        <div className="HomeInvitation">
+          <div className="HomeInvitationBox">
+            <div className="InviteRequestWrapper">
+              <div className="HomeSummaryTitle">
+                <PersonAdd className='HomeSummaryIcon'/>
+                Invite Request Notification
+              </div>
+             <button className='ExpandRequestButton'>More Info</button>
+            </div>
+            <div className="HomeSummaryBoxDetailsGroup">
+                <span>
+                  pending request : 4
+                </span>
+                <span>
+                  incoming requests : 4
+                </span>
+            </div>
           </div>
         </div>
       </div>

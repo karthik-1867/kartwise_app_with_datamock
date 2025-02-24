@@ -105,57 +105,50 @@ export default function EditExpenseGroup() {
          </ul>
        </div>
        <div className="EditExpenseChooseGroup2">
-         <h1>Expense Info</h1>
-         <Avatar className='ExpenseInfoAvatar'/>
-         <span className='EditExpenseGroupName'>Group Name : kinara</span>
-         <span className='EditExpenseGroupName'>Total members : 6</span>
-         <span className='EditExpenseGroupName'>Total expense group : 3</span>
-         <h1>Members</h1>
-         <ul  className='EditExpenseGroupList'>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-            <li className='EditExpenseItem'>
-                kart
-            </li>
-        
-         </ul>
+         <div className="EditWarpper">
+            <h1>Expense Info</h1>
+            <Avatar className='ExpenseInfoAvatar'/>
+            <span className='EditExpenseGroupName'>Group Name : kinara</span>
+            <span className='EditExpenseGroupName'>Total members : 6</span>
+            <span className='EditExpenseGroupName'>Total expense group : 3</span>
+         </div>
+         <div className="EditListWrapper">
+            <h1>Members</h1>
+            <ul  className='EditExpenseGroupList'>
+                <li className='ClickedMember'>
+                    <Avatar className='EditAvatar'/>
+                    <span>Karthik</span>
+                </li>  
+                <li className='ClickedMember'>
+                    <Avatar className='EditAvatar'/>
+                    <span>Karthik</span>
+                </li>   
+                <li className='ClickedMember'>
+                    <Avatar className='EditAvatar'/>
+                    <span>Karthik</span>
+                </li> 
+                <li className='ClickedMember'>
+                    <Avatar className='EditAvatar'/>
+                    <span>Karthik</span>
+                </li> 
+                <li className='ClickedMember'>
+                    <Avatar className='EditAvatar'/>
+                    <span>Karthik</span>
+                </li> 
+                <li className='ClickedMember'>
+                    <Avatar className='EditAvatar'/>
+                    <span>Karthik</span>
+                </li> 
+                <li className='ClickedMember'>
+                    <Avatar className='EditAvatar'/>
+                    <span>Karthik</span>
+                </li> 
+                <li className='ClickedMember'>
+                    <Avatar className='EditAvatar'/>
+                    <span>Karthik</span>
+                </li> 
+            </ul>
+         </div>
        </div>
     </div>
   )

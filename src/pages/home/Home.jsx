@@ -6,13 +6,15 @@ import { Users } from '../../dummyData';
 import { useDispatch, useSelector } from 'react-redux';
 import { loginStart, loginSuccess } from '../../redux/userSlice';
 import GroupIcon from '@mui/icons-material/Group';
-import { CurrencyRupee, Group, Groups2, Money } from '@mui/icons-material';
+import { CurrencyRupee, Group, Groups2, Money, PersonAdd } from '@mui/icons-material';
 import { Link } from 'react-router-dom';
+import { Select } from '@mui/material';
 
 export default function Home() {
 
   console.log("dummy")
   const dispatch = useDispatch();
+  const [requestType,selectRequestType] = useState("pending");
   const favUser = useSelector((state)=>state.user.user);
   const [dialogue,setDialogue] = useState(false);
 
@@ -79,41 +81,62 @@ const saveFavUser = () =>{
 
   return (
     <div className='HomeContainer'>
-      <div className="HomeSummary">
-        <div className="HomeSummaryBoxes">
-          <div className="HomeSummaryTitle">
-            <CurrencyRupee className='HomeSummaryIcon'/>
-            Expense summary
-          </div>
-          <div className="HomeSummaryBoxDetails">
-            <div className="HomeSummaryAmount">
-               Spent :
-               <span className='HomeAmountSpent'>50054 rs</span>
+      <div className="HomeBar">
+        <div className="HomeSummary">
+          <div className="HomeSummaryBoxes">
+            <div className="HomeSummaryTitle">
+              <CurrencyRupee className='HomeSummaryIcon'/>
+              Expense summary
             </div>
-            <div className="HomeSummaryAmount">
-                 recived :
-                 <span className='HomeAmountReceived'>50034 rs</span>            
+            <div className="HomeSummaryBoxDetails">
+              <div className="HomeSummaryAmount">
+                Spent :
+                <span className='HomeAmountSpent'>50054 rs</span>
               </div>
+              <div className="HomeSummaryAmount">
+                  recived :
+                  <span className='HomeAmountReceived'>50034 rs</span>            
+                </div>
+            </div>
+          </div>
+          <div className="HomeSummaryBoxes">
+            <div className="HomeSummaryTitle">
+              <Group className='HomeSummaryIcon'/>
+              Total groups
+            </div>
+            <div className="HomeSummaryBoxDetailsGroup">
+                <span>
+                  groups : 4
+                </span>
+                <span>
+                  Expense : 4
+                </span>
+                <span>
+                fav users : 109
+                </span>
+            </div>
           </div>
         </div>
-        <div className="HomeSummaryBoxes">
-          <div className="HomeSummaryTitle">
-            <Group className='HomeSummaryIcon'/>
-            Total groups
-          </div>
-          <div className="HomeSummaryBoxDetailsGroup">
-              <span>
-                 groups : 4
-              </span>
-              <span>
-                Expense : 4
-              </span>
-              <span>
-               fav users : 109
-              </span>
+        <div className="HomeInvitation">
+          <div className="HomeInvitationBox">
+            <div className="InviteRequestWrapper">
+              <div className="HomeSummaryTitle">
+                <PersonAdd className='HomeSummaryIcon'/>
+                Invite Request Notification
+              </div>
+            </div>
+            <div className="HomeSummaryBoxDetailsGroup">
+                <span>
+                  pending request : 4
+                </span>
+                <span>
+                  incoming requests : 4
+                </span>
+            </div>
           </div>
         </div>
       </div>
+      <div className="HomeWrapperContainer">
       <div className="HomeWrapper">      
          <div className="HomeAllUsers">
           <h1>Global users</h1>
@@ -156,6 +179,42 @@ const saveFavUser = () =>{
           </ul>
           <button onClick={saveFavUser} className='HomeButton'>Submit</button>
          </div>}
+      </div>
+      <div className="InviteWrapper">
+        <div className="ChooseInviteView">
+          <h1>select request type</h1>
+          <div className="ChooseInviteViewDetails">
+          <button onClick={()=>selectRequestType("pending")}>Pending request</button>
+          <span>count : 3</span>
+          </div>
+          <div className="ChooseInviteViewDetails">
+          <button onClick={()=>selectRequestType("incoming")}>Incoming request</button>
+          <span>count : 0</span>
+          </div>
+        </div>
+        {requestType == "pending" ?
+          <div className="InviteDetails">
+          <h1>Pending request</h1>
+          <ul className='InvitependingList'>
+          {users?.map((user)=>(
+          <li>
+            <User user={'karthik'} userData={user} key={user.id} addUser={addUser} profile='true' className='HomeListValue'/>
+            </li>
+          ))}
+          </ul>
+        </div> : <div className="InviteDetails">
+          <h1>Incoming request</h1>
+          <ul className='InvitependingList'>
+          {users?.map((user)=>(
+          <li>
+            <User user={'karthik'} userData={user} key={user.id} addUser={addUser} profile='true' className='HomeListValue'/>
+            </li>
+          ))}
+          </ul>
+        </div>
+
+        }
+      </div>
       </div>
     </div>
   )

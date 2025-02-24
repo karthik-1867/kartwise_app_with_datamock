@@ -31,7 +31,7 @@ export default function User({user,userData,addUser,addFavUser,profile,deleteUse
       </div>
       </div>
       
-      {hover && (profile == 'false'? <button onClick={removeUserData} className='UserAddToFavButton'>Delete</button> :<button onClick={addUserData} className='UserAddToFavButton'>Add To quick List</button>)}
+      {hover && (profile == 'false'? <button onClick={removeUserData} className='UserAddToFavButton'>Delete</button> :<button onClick={addUserData} className='UserAddToFavButton'>Invite</button>)}
     </div>
   )
 }
