@@ -11,6 +11,7 @@ import Message from "./pages/message/Message";
 import Login from "./pages/login/Login";
 import Signup from "./pages/signup/Signup";
 import EditExpenseGroup from "./pages/EditExpenseGroup/EditExpenseGroup";
+import UpdateExpense from "./pages/updateExpense/UpdateExpense";
 
 
 function App() {
@@ -26,7 +27,10 @@ function App() {
               <Route path="/expenseGroup" element={<CreateExpense />} />
               <Route path="/editGroup" element={<EditExpenseGroup />} />
               <Route path="/expenseSheet" element={<CreateExpenseSheet />} />
-              <Route path="/expenseSummary" element={<ExpenseSummary />} />
+              <Route path="/expenseSummary">
+                 <Route path="" element={<ExpenseSummary />} />
+                 <Route path=":id" element={<UpdateExpense />} />
+              </Route>
               <Route path="/message" element={<Message />} />
             </Route>
           </Routes>

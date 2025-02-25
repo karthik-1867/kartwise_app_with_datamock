@@ -1,5 +1,6 @@
 .expenseCardContainer{
-    width: 630px;
+    width: 100%;
+    box-sizing: border-box;
     background-color: white;
     border-radius: 10px;
     display: flex;
@@ -15,6 +16,11 @@
     display: flex;
     align-items: center;
     gap: 20px;
+}
+
+.OwnerCaptilize{
+    font-weight: 500;
+    text-transform: uppercase;
 }
 
 .expenseCardButtons{
@@ -47,6 +53,7 @@
     background-color: #8B8CC7;
     border-radius: 4px;
     padding: 5px;
+    font-size: 14px;
     width: fit-content;
     color: white;
 }

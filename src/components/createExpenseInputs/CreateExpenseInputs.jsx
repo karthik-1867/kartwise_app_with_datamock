@@ -16,7 +16,7 @@ export default function CreateExpenseInputs({users,handleUserInputs}) {
         {users?.profilePicture ? <img className='CreateExpenseSheetNameLogo' src={users?.profilePicture} alt="" />:<Avatar/>}
         <h4>{users?.username}</h4>
         </div>
-        <input type="text" placeholder='Expense' className='CreateExpenseSheetListInput' onChange={(e)=>userInputs(e)}/>
+        <input type="Number" placeholder='Expense' className='CreateExpenseSheetListInput' onChange={(e)=>userInputs(e)}/>
     </div>
   )
 }

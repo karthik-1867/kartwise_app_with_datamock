@@ -14,9 +14,41 @@ export default function EditExpenseGroup() {
                 <div className="EditExpenseInfo">
                     <div className="EditExpenseUserDetails">
                         <Avatar className='EditAvatar'/>
-                        karthik venkatachalam
                     </div>
-                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li>
+            <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                    </div>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li>  
+            <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                    </div>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
                 </div>
                 <div className="EditExpenseGroupButton">
                     <Edit className='EditExpenseButton'/>
@@ -27,9 +59,11 @@ export default function EditExpenseGroup() {
                 <div className="EditExpenseInfo">
                     <div className="EditExpenseUserDetails">
                         <Avatar className='EditAvatar'/>
-                        karthik venkatachalam
                     </div>
-                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
                 </div>
                 <div className="EditExpenseGroupButton">
                     <Edit className='EditExpenseButton'/>
@@ -40,9 +74,25 @@ export default function EditExpenseGroup() {
                 <div className="EditExpenseInfo">
                     <div className="EditExpenseUserDetails">
                         <Avatar className='EditAvatar'/>
-                        karthik venkatachalam
                     </div>
-                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
+                </div>
+                <div className="EditExpenseGroupButton">
+                    <Edit className='EditExpenseButton'/>
+                    <Delete className='EditExpenseButton'/>
+                </div>  
+            </li>             <li className='EditExpenseItem'>
+                <div className="EditExpenseInfo">
+                    <div className="EditExpenseUserDetails">
+                        <Avatar className='EditAvatar'/>
+                    </div>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
                 </div>
                 <div className="EditExpenseGroupButton">
                     <Edit className='EditExpenseButton'/>
@@ -53,9 +103,11 @@ export default function EditExpenseGroup() {
                 <div className="EditExpenseInfo">
                     <div className="EditExpenseUserDetails">
                         <Avatar className='EditAvatar'/>
-                        karthik venkatachalam
                     </div>
-                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
                 </div>
                 <div className="EditExpenseGroupButton">
                     <Edit className='EditExpenseButton'/>
@@ -66,9 +118,11 @@ export default function EditExpenseGroup() {
                 <div className="EditExpenseInfo">
                     <div className="EditExpenseUserDetails">
                         <Avatar className='EditAvatar'/>
-                        karthik venkatachalam
                     </div>
-                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
                 </div>
                 <div className="EditExpenseGroupButton">
                     <Edit className='EditExpenseButton'/>
@@ -79,9 +133,11 @@ export default function EditExpenseGroup() {
                 <div className="EditExpenseInfo">
                     <div className="EditExpenseUserDetails">
                         <Avatar className='EditAvatar'/>
-                        karthik venkatachalam
                     </div>
-                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
                 </div>
                 <div className="EditExpenseGroupButton">
                     <Edit className='EditExpenseButton'/>
@@ -92,9 +148,11 @@ export default function EditExpenseGroup() {
                 <div className="EditExpenseInfo">
                     <div className="EditExpenseUserDetails">
                         <Avatar className='EditAvatar'/>
-                        karthik venkatachalam
                     </div>
-                    <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    <div className="EditExpenseOwnerDetails">
+                        karthik venkatachalam
+                        <span className="EditExpenseGroupOwner">Admin : karthik</span>
+                    </div>
                 </div>
                 <div className="EditExpenseGroupButton">
                     <Edit className='EditExpenseButton'/>

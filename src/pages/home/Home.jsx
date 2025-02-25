@@ -168,7 +168,7 @@ const saveFavUser = () =>{
               </span>
          </div>
          : <div className="HomeAllUsers preview">
-          <h1>Added preview</h1>
+          <h1>Invited User</h1>
           <ul className='HomeList'>
             {addFavUser?.map((user)=>(
             <li>
@@ -183,13 +183,15 @@ const saveFavUser = () =>{
       <div className="InviteWrapper">
         <div className="ChooseInviteView">
           <h1>select request type</h1>
-          <div className="ChooseInviteViewDetails">
-          <button onClick={()=>selectRequestType("pending")}>Pending request</button>
-          <span>count : 3</span>
-          </div>
-          <div className="ChooseInviteViewDetails">
-          <button onClick={()=>selectRequestType("incoming")}>Incoming request</button>
-          <span>count : 0</span>
+          <div className="chooseInviteViewWrapper">
+            <div className="ChooseInviteViewDetails">
+              <button onClick={()=>selectRequestType("pending")}>Pending request</button>
+              <span>count : 3</span>
+            </div>
+            <div className="ChooseInviteViewDetails">
+              <button onClick={()=>selectRequestType("incoming")}>Incoming request</button>
+              <span>count : 0</span>
+            </div>
           </div>
         </div>
         {requestType == "pending" ?
